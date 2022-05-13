@@ -1,0 +1,10 @@
+<p>
+  {{user.id}}
+  {{user.name}}
+  {{user.company.name}}
+  <!--  usrl based on father-->
+  <!--  <a routerLink="user-details/{{user.id}}">details</a>-->
+  <a [routerLink]="['user-details',user.id]">details</a>
+
+
+</p>
