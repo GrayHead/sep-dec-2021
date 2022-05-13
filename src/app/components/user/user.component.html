@@ -4,7 +4,15 @@
   {{user.company.name}}
   <!--  usrl based on father-->
   <!--  <a routerLink="user-details/{{user.id}}">details</a>-->
-  <a [routerLink]="['user-details',user.id]">details</a>
+  <!--  <a [routerLink]="['user-details',user.id]" [state]="{data:user}">details</a>-->
+  <button (click)="navigateMe(user)">details</button>
+
+
+  <!--  HW-->
+  <!--  /posts/Id   with url pass   history.state-->
+  <!--  /comments/ID   ddos-->
 
 
 </p>
+
+
