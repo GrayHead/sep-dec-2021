@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {IUser} from "./models/IUser";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'sep-dec-2021';
+
+  user: IUser;
+
+  catch(user: IUser) {
+    console.log(user, 'app');
+    this.user = user;
+
+  }
 }
