@@ -11,8 +11,7 @@ import {IUser} from "../../models/IUser";
 export class UsersComponent implements OnInit {
 
   users: IUser[];
-  @Output()
-  userEmitt = new EventEmitter<IUser>();
+
 
   constructor(private userService: UserService) {
   }
@@ -22,9 +21,5 @@ export class UsersComponent implements OnInit {
 
   }
 
-  catchUserEmitt(userCatch: IUser): void {
-    console.log('users', userCatch);
-    this.userEmitt.emit(userCatch);
-  }
 
 }
